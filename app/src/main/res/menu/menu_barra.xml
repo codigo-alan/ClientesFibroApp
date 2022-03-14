@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_mihome"
+        android:title="Home"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/productos"
+        android:title="Productos"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/contactos"
+        android:title="Contactos"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/descargas"
+        android:title="Instructivos"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/ubicacion"
+        android:icon="@drawable/ic_milocation"
+        android:title="Ubicación"
+        app:showAsAction="always" />
+
+
+</menu>

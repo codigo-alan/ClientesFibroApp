@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ic_launcher_background"
+    android:paddingLeft="16dp"
+    android:paddingTop="50dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context="com.example.conversorunidadesfo.inicio">
+
+
+    <Button
+        android:id="@+id/btn_conversor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@id/txt_web"
+        android:onClick="conversor"
+        android:text="Conversor"
+        android:visibility="gone"
+        app:backgroundTint="@color/purple_500" />
+
+    <TextView
+        android:id="@+id/txt_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_web"
+        android:text="Visite nuestra página oficial para ver el catálogo de productos"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="web"
+        android:text="web"
+        android:visibility="gone"
+        app:backgroundTint="@color/purple_500"
+        app:icon="@android:drawable/ic_menu_search"
+        app:iconTint="@color/black" />
+
+    <ImageButton
+        android:id="@+id/btn_productos"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/txt_btnProductos"
+        android:layout_marginTop="0dp"
+        android:onClick="web"
+        app:srcCompat="@drawable/productosbotonok" />
+
+    <ImageButton
+        android:id="@+id/btn_coti_patch"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignBottom="@id/btn_coti_equipos"
+        android:layout_alignParentEnd="true"
+        android:onClick="coti"
+        app:srcCompat="@drawable/scapcok" />
+
+    <ImageButton
+        android:id="@+id/btn_coti_equipos"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/txt_btnCoti_equipos"
+        app:srcCompat="@drawable/equiposbotonok" />
+
+    <ImageButton
+        android:id="@+id/btn_instructivos"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignBottom="@id/btn_productos"
+        android:layout_alignParentEnd="true"
+        android:onClick="instructivos"
+        app:srcCompat="@drawable/instructivosbotonok" />
+
+    <TextView
+        android:id="@+id/txt_btnProductos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Nuestros productos" />
+
+    <TextView
+        android:id="@+id/txt_btnCoti_equipos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_productos"
+        android:layout_marginTop="30dp"
+        android:text="Solicite cotizaciones" />
+
+    <TextView
+        android:id="@+id/txt_btnCoti_patch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_instructivos"
+        android:layout_alignStart="@id/btn_coti_patch"
+        android:layout_marginTop="30dp"
+        android:text="Armado de patchcords" />
+
+    <TextView
+        android:id="@+id/txt_btnInstructivos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/btn_instructivos"
+        android:layout_marginTop="10dp"
+        android:text="Visualice instructivos" />
+
+
+</RelativeLayout>

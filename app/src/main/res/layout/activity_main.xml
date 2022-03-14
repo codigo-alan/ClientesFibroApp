@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ic_launcher_background"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context="com.example.conversorunidadesfo.MainActivity">
+
+
+    <TextView
+        android:id="@+id/txt_formal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btn_cotizar"
+        android:layout_alignParentEnd="true"
+        android:text="Solicitar cotización formal"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/txt_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:hint="Costo sin IVA"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtPrecio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_con1"/>
+
+    <TextView
+        android:id="@+id/txtPrecio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_con2"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/txtPrecio3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_cable"
+        android:text="CABLE" />
+
+    <ImageButton
+        android:id="@+id/btn_formal"
+        android:layout_width="48dp"
+        android:layout_height="38dp"
+        android:layout_below="@id/txt_formal"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="58dp"
+        android:background="#003700B3"
+        android:onClick="cot_formal"
+        app:srcCompat="@drawable/mailicono" />
+
+    <ImageView
+        android:id="@+id/img_con1"
+        android:layout_width="230dp"
+        android:layout_height="450dp"
+        android:layout_below="@id/txt_armado"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitStart" />
+
+    <ImageView
+        android:id="@+id/img_con2"
+        android:layout_width="230dp"
+        android:layout_height="450dp"
+        android:layout_below="@id/txt_armado"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitStart" />
+
+    <ImageView
+        android:id="@+id/img_cable"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/txt_cable"
+        android:scaleType="fitStart" />
+
+    <TextView
+        android:id="@+id/txt_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/txt_cable"
+        android:layout_toLeftOf="@id/spinner4"
+        android:text="[m]:  " />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_con1"
+        android:gravity="left|center_vertical" />
+
+    <TextView
+        android:id="@+id/txt_con2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_armado"
+        android:layout_alignParentEnd="true"
+        android:text="Conector 2do extremo:" />
+
+    <TextView
+        android:id="@+id/txt_con1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_armado"
+        android:text="Conector 1er extremo: " />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_con2"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/txt_cable"
+        android:layout_toRightOf="@id/txt_cable" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/txt_long"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btn_cotizar"
+        android:layout_width="88dp"
+        android:layout_height="35dp"
+
+        android:layout_above="@id/txt_precio"
+        android:text="Calcular"
+        android:textSize="10sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner4"
+        android:layout_alignParentEnd="true"
+        android:text="Cable doble" />
+
+    <EditText
+        android:id="@+id/edit_formato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBox"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:visibility="gone" />
+
+    <RadioGroup
+        android:id="@+id/rg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_tipo"
+        tools:layout_marginBottom="30dp">
+
+        <RadioButton
+            android:id="@+id/radioButton_sm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:onClick="condicional_tipo"
+            android:text="Single Mode SM" />
+
+        <RadioButton
+            android:id="@+id/radioButton_mm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="condicional_tipo"
+            android:text="Multi Mode MM" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt_tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Seleccione el tipo de fibra"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_armado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rg1"
+        android:layout_marginBottom="15dp"
+        android:text="2. Elija conectores, cable y su longitud"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_cable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_armado"
+        android:layout_marginTop="180dp"
+        android:text="Cable:  " />
+</RelativeLayout>

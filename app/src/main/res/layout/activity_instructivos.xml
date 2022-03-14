@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ic_launcher_background"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context="com.example.conversorunidadesfo.instructivos">
+
+
+    <TextView
+        android:id="@+id/txt_instructivos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instructivos"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_kl280e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_ats80"
+        android:onClick="kl280e"
+        android:text="KL280-E"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_ato750"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_instructivos"
+        android:onClick="ato750"
+        android:text="ATO 750"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_ats80"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_ato350"
+        android:onClick="ats80a"
+        android:text="ATS-80"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_ato350"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_ato750"
+        android:onClick="ato350"
+        android:text="ATO 350"
+        android:textSize="12sp" />
+
+</RelativeLayout>
